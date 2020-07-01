@@ -3086,7 +3086,7 @@
 /*banner 3*/
 #banner3 {
 		padding: 5em 0 3em 0;
-		background-image: url('https://yunhaoyang234.github.io/background.jpg');
+		background-image: url('https://yunhaoyang234.github.io/images/proj.jpg');
 		background-size: cover;
 		background-position: top;
 		background-attachment: fixed;
@@ -3106,7 +3106,7 @@
 
 		#banner3 p {
 			font-size: 1em;
-			color: rgba(255, 255, 255, 0.55);
+			color: rgba(255, 255, 255, 1);
 			margin-bottom: 1.75em;
 		}
 
