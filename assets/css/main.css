@@ -2262,6 +2262,11 @@
 			height: 200px;
 		}
 
+		.image.square img {
+			width: 200px;
+			height: 200px;
+		}
+
 		.image.left {
 			float: left;
 			padding: 0 1.5em 1em 0;
