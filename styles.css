@@ -27,7 +27,7 @@ header, nav, article, aside, footer, hgroup, section { display: block }
 /******************************************************************************************/
 
 html {background-color: midnightblue;
-	  background-image: url('music.jpg');
+	  background-image: url('images/banner.jpg');
 	  background-attachment: fixed;
 	  object-fit: cover;
 	  background-position: center center;}						/*HINT - background color of site set here*/
