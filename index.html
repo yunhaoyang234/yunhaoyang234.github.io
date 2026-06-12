@@ -260,6 +260,48 @@
       font-size: 1.15rem;
       line-height: 1.45;
     }
+    .award-card {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      padding: 4px 1rem;
+      margin-bottom: 1.1rem;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: #ffffff;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+    }
+    .award-logo {
+      flex: 0 0 145px;
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2.5px 0.75rem;
+      border-radius: 6px;
+      background: var(--bg-subtle);
+    }
+    .award-logo img {
+      width: auto;
+      height: 64px;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+    }
+    .award-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .award-title {
+      font-weight: 700;
+      font-size: 1.35rem;
+      line-height: 1.35;
+      margin-bottom: 0.25rem;
+    }
+    .award-meta {
+      color: var(--text-muted);
+      font-weight: 600;
+    }
     @media (max-width: 767px) {
       .pub-card {
         flex-direction: column;
@@ -267,6 +309,12 @@
       .pub-thumb {
         width: 100%;
         flex-basis: auto;
+      }
+      .award-card {
+        align-items: flex-start;
+      }
+      .award-logo {
+        flex: 0 0 115px;
       }
     }
     .col-md-8[style*="height: 100vh"] {
@@ -706,18 +754,42 @@
                 <br>
 
                 <h2 id="awards">Awards and Fellowships</h2>
-                <p>
-                    <b><a href="https://sciencehub.utexas.edu/phd-fellowship-recipients/" target="_blank">Amazon Fellow</a></b>. Amazon Science Hub, 2024-2025.
-                </p>
-                <p>
-                    <b>Special Departmental Honor in Computer Science</b>. College of Natural Science, UT Austin, 2022.
-                </p>
-                <p>
-                    <b><a href="https://cns.utexas.edu/info-undergraduate-students/events-recognition/cns-distinctions", target="_blank">Research Distinction</a></b>. College of Natural Science, UT Austin, 2021.
-                </p>
-                <p>
-                    <b><a href="https://undergradcollege.utexas.edu/academics/undergraduate-research/scholarships-awards/undergraduate-research-fellowship" target="_blank">Undergraduate Research Fellowship</a></b>. College of Natural Science, UT Austin, 2020.
-                </p>
+                <article class="award-card">
+                    <div class="award-logo">
+                        <img src="images/amazon.png" alt="Amazon logo">
+                    </div>
+                    <div class="award-content">
+                        <div class="award-title"><a href="https://sciencehub.utexas.edu/phd-fellowship-recipients/" target="_blank" rel="noopener noreferrer">Amazon Fellowship</a></div>
+                        <div class="award-meta">Amazon Science Hub, 2024-2025.</div>
+                    </div>
+                </article>
+                <article class="award-card">
+                    <div class="award-logo">
+                        <img src="images/cns-logo.svg" alt="College of Natural Sciences logo">
+                    </div>
+                    <div class="award-content">
+                        <div class="award-title"><a href="https://cns.utexas.edu/info-undergraduate-students/events-recognition/other-academic-honors" target="_blank" rel="noopener noreferrer">Special Departmental Honor in Computer Science</a></div>
+                        <div class="award-meta">College of Natural Science, UT Austin, 2022.</div>
+                    </div>
+                </article>
+                <article class="award-card">
+                    <div class="award-logo">
+                        <img src="images/research.jpg.webp" alt="Research Distinction logo">
+                    </div>
+                    <div class="award-content">
+                        <div class="award-title"><a href="https://cns.utexas.edu/info-undergraduate-students/events-recognition/cns-distinctions" target="_blank" rel="noopener noreferrer">Research Distinction</a></div>
+                        <div class="award-meta">College of Natural Science, UT Austin, 2021.</div>
+                    </div>
+                </article>
+                <article class="award-card">
+                    <div class="award-logo">
+                        <img src="images/undergrad-fellow.svg" alt="Undergraduate Research Fellowship logo">
+                    </div>
+                    <div class="award-content">
+                        <div class="award-title"><a href="https://undergradcollege.utexas.edu/academics/undergraduate-research/scholarships-awards/undergraduate-research-fellowship" target="_blank" rel="noopener noreferrer">Undergraduate Research Fellowship</a></div>
+                        <div class="award-meta">College of Natural Science, UT Austin, 2020.</div>
+                    </div>
+                </article>
 
                 <br>
 
